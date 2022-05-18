@@ -53,13 +53,26 @@
 
 .img_details_cont {
     position: absolute;
-    z-index: 4;
+    z-index: 10;
     height: calc(250px);
     width: 100%;
-
+    display: block;
 }
 
 .img_details {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: inherit;
+    background-color: transparent;
+}
+
+.details_wrap {
+    color: transparent;
+}
+
+.img_details:hover {
     display: flex;
     justify-content: center;
     align-items: center;

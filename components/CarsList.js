@@ -144,8 +144,8 @@ const CarList = () => {
                         <div className={styles.wrapper}>
                             {carsItem.cars.map((car, i) => (
                                 <div className={styles.car__card} key={i}>
-                                    <div className={styles.img_details_cont} onMouseOver={() => setView(true)} onMouseLeave={() => setView(false)}>
-                                        {view && (
+                                    <div className={styles.img_details_cont}>
+                                        {/* {view && ( */}
                                             <div className={styles.img_details}>
 
                                                 <div className={styles.details_wrap}>
@@ -156,7 +156,7 @@ const CarList = () => {
                                                     </div>
                                                 </div>
                                             </div>
-                                        )}
+                                         {/* )} */}
                                     </div>
                                     <div className={styles.img__wrapper}>
                                         <Image src={car.img} alt='image' layout='fill' objectFit='cover' className={styles.img} />
