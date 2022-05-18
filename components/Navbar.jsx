@@ -3,7 +3,7 @@ import Link from 'next/link';
 import { FaBars } from 'react-icons/fa';
 import { useSelector, useDispatch } from 'react-redux'
 import { useState } from 'react';
-import { handleSlide } from '../redux/SidebarSlice';
+import { handleSlide } from '../redux/sidebarSlice';
 
 const Navbar = () => {
 
