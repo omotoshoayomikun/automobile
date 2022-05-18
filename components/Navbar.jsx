@@ -9,8 +9,6 @@ const Navbar = () => {
 
     const [view, setView] = useState(true)
 
-    const quantity = useSelector(state => state.sidebar.bar)
-
 
     const dispatch = useDispatch();
 

@@ -54,18 +54,18 @@ const Car = () => {
                 <div className={styles.left}>
                     <div className={styles.wrapper}>
                         <div className={styles.arrow} style={{ left: '0' }} onClick={() => handleSlide('l')}>
-                            <Image src='/img/arrowl.png' layout='fill' />
+                            <Image src='/img/arrowl.png' alt='images' layout='fill' />
                         </div>
                         <div className={styles.img_wrapper} style={{ transform: `translateX(${-100 * index}vw)` }}>
                             {images.map((image, i) => (
                                 <div className={styles.img} key={i}>
-                                    <Image src={image} alt='image' layout='fill' objectFit='cover' />
+                                    <Image src={image} alt='images' layout='fill' objectFit='cover' />
                                 </div>
                             ))}
                         </div>
 
                         <div className={styles.arrow} style={{ right: '0' }} onClick={() => handleSlide('r')}>
-                            <Image src='/img/arrowr.png' layout='fill' />
+                            <Image src='/img/arrowr.png' alt='images' layout='fill' />
                         </div>
                     </div>
                     <div className={styles.price_wrap} onClick={() => setShow(true)}>

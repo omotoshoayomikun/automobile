@@ -45,17 +45,17 @@ const Slider = () => {
 
         <div className={styles.container}>
             <div className={styles.arrow} style={{ left: '0px' }} onClick={() => handleArrow('l')}>
-                <Image src='/img/arrowl.png' layout='fill' />
+                <Image src='/img/arrowl.png' alt='images' layout='fill' />
             </div>
             <div className={styles.img_wrapper} style={{ transform: `translateX(${-100 * index}vw)` }}>
                 {images.map((image, i) => (
                     <div className={styles.imgContainer} key={i}>
-                        <Image src={image} layout='fill' objectFit='cover' />
+                        <Image src={image} alt='images' layout='fill' objectFit='cover' />
                     </div>
                 ))}
             </div>
             <div className={styles.arrow} style={{ right: '0px' }} onClick={() => handleArrow('r')}>
-                <Image src='/img/arrowr.png' layout='fill' />
+                <Image src='/img/arrowr.png' alt='images' layout='fill' />
             </div>
             <div className={styles.text_wrapper}>
                 <h1 className={styles.header}>WELCOME TO AUTO CAR</h1>
