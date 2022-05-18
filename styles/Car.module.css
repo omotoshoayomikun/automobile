@@ -1,0 +1,153 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@300&display=swap');
+
+.container {
+    width: 100%;
+    height: calc(100vh - 80px);
+    display: flex;
+    font-family: 'Roboto Condensed', sans-serif;
+    flex-wrap: wrap;
+}
+
+
+.left {
+    width: 73%;
+    height: 100%;
+    overflow-x: hidden;
+    position: relative;
+}
+
+.price_wrap {
+    position: absolute;
+    width: 300px;
+    height: 67px;
+    background-color: rgb(225, 225, 225);
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+
+.angleUp {
+    background-color: #fff;
+    padding: 3px;
+    border-radius: 50%;
+    font-size: 20px;
+    color: grey;
+    display: flex;
+    margin-right: 15px;
+    box-shadow: 0px 0px 5px rgb(87, 87, 87);
+}
+
+.right {
+    width: 27%;
+    overflow-y: scroll;
+}
+.right::-webkit-scrollbar {
+    display: none;
+}
+
+.wrapper {
+    width: 100%;
+    height: calc(100vh - 80px);
+    position: relative;
+}
+
+.arrow {
+    z-index: 70;
+    width: 70px;
+    height: 70px;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+    position: absolute;
+    cursor: pointer;
+}
+
+.img_wrapper {
+    width: 70vw;
+    height: 100%;
+    display: flex;
+    /* transition: all 7s; */
+}
+
+.img {
+    min-width: 100vw !important;
+    height: 100% !important;
+    position: relative;
+    object-fit: contain;
+}
+
+.heading {
+    font-weight: bold;
+    text-align: center;
+}
+
+.ppp {
+    margin-bottom: 0px;
+}
+
+.fz {
+    font-size: 13px;
+    font-weight: bold;
+}
+
+.df {
+    display: flex;
+    /* align-items: center; */
+    justify-content: space-between;
+    text-align: center;
+    width: 100%;
+    flex-wrap: wrap;
+    padding-left: 30px;
+    padding-right: 30px;
+    text-align: center;
+}
+
+.m_r {
+    /* margin-right: 40px;
+    text-align: center; */
+}
+
+.m_r:last-child {
+    margin-right: 0px;
+}
+
+.ul {
+    margin-left: 20px;
+    /* padding: 0px; */
+}
+
+.ul>li {
+    margin: 10px;
+    color: rgb(88, 87, 87);
+    font-weight: bold;
+    font-size: 15px;
+}
+
+@media screen and (max-width: 768px) {
+    .container {
+        display: block;
+        flex-direction: column;
+    }
+    .left {
+        width: 100%;
+        height: 80%;
+        overflow: hidden;
+    }
+    .right {
+        width: 100%;
+    }
+    .df {
+        justify-content: center;
+    }
+    .m_r {
+        margin-right: 40px;
+        text-align: center;
+    }
+}
